@@ -1,1 +1,3 @@
-JellyCat is a fully functional E-Commerce Application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It includes full CRUD operations for managing products, allowing users to create, read, update, and delete product data. The frontend (React) and backend (Node.js/Express) are seamlessly integrated with MongoDB for persistent storage. The application showcases user-friendly interfaces, dynamic routing, and real-time updates, demonstrating practical skills in building modern full-stack web applications.
+JellyCat
+
+JellyCat is an e-commerce platform built with the MERN stack (MongoDB, Express, React, Node.js). It supports full CRUD operations for product management, offering a seamless frontend and backend integration for a smooth user experience.
