@@ -1,34 +1,34 @@
-import express from 'express';
-import {
-  placeOrder,
-  placeOrderStripe,
-  verifyStripe,
-  allOrders,
-  userOrders,
-  updateStatus
-} from '../controllers/orderController.js';
+// import express from 'express';
+// import {
+//   placeOrder,
+//   placeOrderStripe,
+//   verifyStripe,
+//   allOrders,
+//   userOrders,
+//   updateStatus
+// } from '../controllers/orderController.js';
 
-import adminAuth from '../middleware/adminAuth.js';
-import authUser from '../middleware/auth.js';
+// import adminAuth from '../middleware/adminAuth.js';
+// import authUser from '../middleware/auth.js';
 
-const orderRouter = express.Router();
+// const orderRouter = express.Router();
 
-// Admin features
-orderRouter.post('/list', adminAuth, allOrders);
-orderRouter.post('/status', adminAuth, updateStatus);
-
-
-//payment features
-orderRouter.post("/place", authUser, placeOrder);
-orderRouter.post("/stripe", authUser, placeOrderStripe);
+// // Admin features
+// orderRouter.post('/list', adminAuth, allOrders);
+// orderRouter.post('/status', adminAuth, updateStatus);
 
 
-// User feature
-orderRouter.post('/userorders', authUser, userOrders);
+// //payment features
+// orderRouter.post("/place", authUser, placeOrder);
+// orderRouter.post("/stripe", authUser, placeOrderStripe);
 
 
-//verify payment
-orderRouter.post("/verifyStripe", authUser, verifyStripe);
+// // User feature
+// orderRouter.post('/userorders', authUser, userOrders);
 
 
-export default orderRouter;
+// //verify payment
+// orderRouter.post("/verifyStripe", authUser, verifyStripe);
+
+
+// export default orderRouter;
