@@ -1,6 +1,5 @@
 
 
-
 import React from 'react'
 import { useState, useContext, useEffect} from 'react';
 import { ShopContext } from '../context/ShopContext';
@@ -8,6 +7,7 @@ import axios from 'axios';
 const Login = () => {
 
   const [currentState, setCurrentState] = useState('Login');
+  
   const { token, setToken, navigate, backendUrl  } = useContext(ShopContext);
 
     const [name, setName] = useState('');

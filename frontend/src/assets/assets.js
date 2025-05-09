@@ -15,6 +15,8 @@ import logo from './logo.png';
 import search from './search.png';
 import user from './user.png';
 import menu from './menu.png';
+import stripe from './stripe.png'
+import stripelogo from './stripelogo.png'
 
 const assets = {
   bear,
@@ -33,7 +35,9 @@ const assets = {
   logo,
   search,
   user,
-  menu
+  menu,
+  stripe,
+  stripelogo
 };
 
 export default assets;

@@ -1,19 +1,3 @@
-// import React from "react";
-
-// const Contact=() => {
-//     return(
-//         <div>
-
-//         </div>
-//     )
-// }
-// export default Contact
-
-
-
-
-
-
 
 import React from 'react'
 import Title from '../components/Title'
