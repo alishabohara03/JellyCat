@@ -1,3 +1,5 @@
+
+
 import { v2 as cloudinary } from "cloudinary";
 import productModel from "../models/productModel.js";
 const addProduct = async (req, res) => {
@@ -33,7 +35,7 @@ const addProduct = async (req, res) => {
         subCategory,
         bestseller: bestseller === "true" ? true : false,
         sizes: JSON.parse(sizes),
-        image: imageUrl, 
+        image: imageUrl, // Single image URL
         date: Date.now(),
       };
 

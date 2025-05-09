@@ -7,6 +7,8 @@ import connectCloudinary from './config/cloudinary.js'
 
 import userRouter from './routes/userRoutes.js'
 import productRouter from './routes/productRoute.js'
+import cartRouter from './routes/cartRoutes.js'
+import orderRouter from './routes/OrderRoutes.js'
 
 
 // App Config
@@ -28,6 +30,8 @@ app.use(cors())
 
 app.use('/api/user',userRouter)
 app.use('/api/product',productRouter)
+app.use('/api/cart',cartRouter)
+app.use('/api/order',orderRouter)
  app.get('/',(req,res)=> {
     res.send("API working")
  })
@@ -35,3 +39,15 @@ app.use('/api/product',productRouter)
 
  app.listen(port, ()=> console.log('Server started on PORT:'+port)
  )
+
+
+
+
+
+
+
+
+
+
+
+

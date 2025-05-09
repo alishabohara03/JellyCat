@@ -1,37 +1,3 @@
-// import React from "react";
-// import assets from '../assets/assets';
-
-// const Navbar = () => {
-//     return (
-//         <div>
-//             <div className="flex items-center py-2 px-0">
-//                 <h1 className="text-3xl font-bold">
-//                     <span style={{ color: 'orange' }}>A</span>
-//                     <span style={{ color: 'green' }}>dmin Panel</span>
-//                 </h1>
-//                 <img  className= 'w-[max(10%,80px)]'src={assets.adminLogo} alt="BrandLogo" className="w-10 h-auto ml-2" />
-//             </div>
-//             <button className="bg-">Logout</button>
-//         </div>
-//     );
-// };
-
-// export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 import React from "react";

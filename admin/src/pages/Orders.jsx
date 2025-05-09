@@ -1,24 +1,3 @@
-// import React from "react";
-
-// const Orders = () => {
-//     return (
-//         <div>
-//             {/* Your Add component content here */}
-//             <h1>Add Product</h1> {/* Example content */}
-//         </div>
-//     );
-// };
-
-// export default Orders; // Ensure this line is present
-
-
-
-
-
-
-
-
-
 
 
 import React from "react";
