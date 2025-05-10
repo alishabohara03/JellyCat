@@ -14,7 +14,7 @@ import orderRouter from './routes/OrderRoutes.js'
 // App Config
 
 const app = express()
-const port = process.env.port || 4000
+const port = process.env.PORT || 4000
 connectDB()
 connectCloudinary()
  
@@ -22,8 +22,21 @@ connectCloudinary()
 
 // middlewares
 
-app.use(express.json())
-app.use(cors())
+// app.use(express.json())
+// app.use(cors())
+
+app.use(express.json());
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
+
+
+
+
 
 
 // Api endpoints
@@ -37,8 +50,12 @@ app.use('/api/order',orderRouter)
  })
 
 
- app.listen(port, ()=> console.log('Server started on PORT:'+port)
- )
+//  app.listen(port, ()=> console.log('Server started on PORT:'+port)
+
+
+ app.listen(port, () => {
+  console.log(`Server running on PORT http://localhost:${port}`);
+});
 
 
 
