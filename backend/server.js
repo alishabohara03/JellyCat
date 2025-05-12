@@ -22,8 +22,6 @@ connectCloudinary()
 
 // middlewares
 
-// app.use(express.json())
-// app.use(cors())
 
 app.use(express.json());
 app.use(
@@ -33,9 +31,6 @@ app.use(
     credentials: true,
   })
 );
-
-
-
 
 
 
@@ -49,8 +44,6 @@ app.use('/api/order',orderRouter)
     res.send("API working")
  })
 
-
-//  app.listen(port, ()=> console.log('Server started on PORT:'+port)
 
 
  app.listen(port, () => {
